@@ -5,7 +5,7 @@
     </div>      
     <div class="row">
         <div class="col-xs-12 col-sm-9">
-            <div *ngIf="description; then noDesc else showDesc"></div>
+            <div *ngIf="description; then showDesc else noDesc"></div>
             <ng-template #showDesc>The original team consisted of Iron Man, Captain America, Hulk, Thor, Black Widow and Hawkeye in The Avengers.</ng-template>
             <ng-template #noDesc>No description.</ng-template>
         </div>
